@@ -20,32 +20,22 @@ def createEnvironment() -> Environment:
     
 # Jinja filter
 def json_dumps(value,indent=None,stripLeadingTrailingQuotes=False):
-    toReturn = json.dumps(value,indent=indent)
-    if stripLeadingTrailingQuotes:
-        return toReturn[1:-1]
-    return toReturn
+    pass
 
 # Jinja filter
 def from_json(value):
-    return json.loads(value)
+    pass
 
 # Jinja filter
 def to_nice_yaml(value, default_flow_style=False, sort_keys=False, indent=2):
-    return yaml.dump(value, default_flow_style=False, sort_keys=sort_keys, indent=indent)
+    pass
 
 # Jinja filter
 def kv_comma_pairs_to_json(value):
-    obj = {}
-    for kvpair in value.split(","):
-        if kvpair and kvpair != '' and '=' in kvpair:
-            key = kvpair.split("=")[0]
-            val = kvpair.split("=")[1]
-            obj[key] = val
-
-    return json.dumps(obj)
+    pass
 
 # Jinja filter
 def to_base64(value):
-    return base64.b64encode(value.encode('utf-8')).decode('utf-8')
+    pass
 
 

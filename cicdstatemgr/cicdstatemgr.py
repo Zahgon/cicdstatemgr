@@ -542,7 +542,7 @@ class CicdStateMgr():
     # This method PERSISTS after the set. 
     # each kv pair can be an propPathExpression=value|file://
     def set_value_and_persist(self, cicdContextDataId, propPath, value, preSetForceReload=False):
-        set_values_and_persist(cicdContextDataId,["{}={}".format(propPath,value)],preSetForceReload)
+        pass
 
 
     # This method PERSISTS after the set. 
